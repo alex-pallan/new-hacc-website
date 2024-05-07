@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth !important;
+  }
+
+body {
+    background-color: #0F1114;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.navbar {
+    background-color: rgb(25, 25, 25, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #3C5F73;
+    border-bottom: 5px solid #3C5F73;
+}
+
+.navbar-brand {
+    font-weight: 700 !important;
+}
+
+.container-xxl {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.card {
+    border-radius: 0;
+    border: 1px solid #3C5F73;
+    background-color: rgb(25, 25, 25, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+hr {
+    color: #3C5F73;
+}
+
+.hr-gradient {
+    color: transparent;
+    background: linear-gradient(to right, #3C5F73, transparent);
+    height: 2px;
+}
+
+.navbar-toggler {
+    border: 1px solid #3C5F73;
+    border-radius: 0;
+}
+
+.dropdown-item.active {
+    background: #3C5F73;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
