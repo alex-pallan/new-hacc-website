@@ -1,0 +1,145 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: #0f1114;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.navbar {
+  background-color: rgb(25, 25, 25, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #3c5f73;
+  border-bottom: 5px solid #3c5f73;
+  position: relative;
+}
+
+.navbar-brand {
+  font-weight: 700 !important;
+}
+
+.container-xxl {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border-radius: 0;
+  border: 1px solid #3c5f73;
+  background-color: rgb(25, 25, 25, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+hr {
+  color: #3c5f73;
+}
+
+.hr-gradient {
+  color: transparent;
+  background: linear-gradient(to right, #3c5f73, transparent);
+  height: 2px;
+}
+
+.navbar-toggler {
+  border: 1px solid #3c5f73;
+  border-radius: 0;
+}
+
+.dropdown-item.active {
+  background: #3c5f73;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.alert {
+  border-radius: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3c5f73;
+}
+
+.filter-dropdown button {
+  border-radius: 0 !important;
+}
+
+.hero-hacc {
+  transform: skew(-10deg) rotate(-10deg);
+  font-size: 30vmin;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1vmin 1vmin 0 #C8102E, -1vmin -1vmin 0 #F1BE48;
+}
+
+.isu {
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    color: #C8102E;
+    font-size: 125%;
+}
+
+.join-btn {
+    border: 1px solid white;
+    border-radius: 0;
+    transition-duration: 0s;
+}
+
+.join-btn:hover {
+    color: white;
+    background-color: #3c5f73;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.learn-more-btn {
+    color: #3c5f73;
+    border: 1px solid #3c5f73;
+    border-radius: 0;
+    transition-duration: 0s;
+}
+
+.learn-more-btn:hover {
+    background-color: #3c5f73;
+}
+
+.modal-content {
+    background-color: rgb(25, 25, 25, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0;
+  border: 1px solid #3c5f73;
+}
+
+.modal-header {
+    border-bottom: 1px solid #3c5f73;
+}
+
+.list-group-item {
+    background: transparent;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.dropdown-item:active {
+    background: #3c5f73;
+}
