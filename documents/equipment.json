@@ -1,0 +1,84 @@
+{
+  "equipment": [
+    {
+      "name": "HackRF One",
+      "type": "communication",
+      "image": "./images/hackrf_rental.jpg",
+      "description": "VHF/UHF Rx/Tx software defined radio. Everything you need to start playing with your RF protocols. We have a basic 75MHz - 1GHz antenna, but if a special antenna is desired, we will see what we can do about getting it. If borrowed, please always leave an antenna on the device when even close to using it. Receiving, and more so transmitting has the potential to damage the device if no antenna is attached.<br /><br />*This device is capable of transmitting on frequencies that may be illegal to transmit on. Please be <b>VERY</b> aware of what frequencies and power levels you are allowed to transmit on before starting transmitting. HACC does not condone this device being used for illegal purposes.*",
+      "availability": "Available",
+      "link": "https://greatscottgadgets.com/hackrf/one/"
+    },
+    {
+      "name": "ALFA USB Wifi Adapter",
+      "type": "communication",
+      "image": "./images/alfawifi_rental.jpg",
+      "description": "2.4GHz all-mode (including monitor mode) USB wireless adapter. It has a Realtek RTL8187 chipset. Very useful for WiFi sniffing and injection activities. There are 2 available 1 with the thin antenna, one without.",
+      "availability": "Available",
+      "link": "https://www.alfa.com.tw/products/awus036h?variant=36481029275720"
+    },
+    {
+      "name": "ALFA Indoor Wifi Antenna",
+      "type": "communication",
+      "image": "./images/alfapanel_rental.jpg",
+      "description": "Alongside the ALFA Wifi adapters, we have ALFA indoor antennas to boost the range of the Wifi adapters. We have 2 available.",
+      "availability": "Available",
+      "link": "https://www.alfa.com.tw/products/apa-m04?variant=36473963806792"
+    },
+    {
+      "name": "Backdoors and Breaches Card Game",
+      "type": "misc",
+      "image": "./images/backdoorsandbreaches.png",
+      "description": "The role playing card game from Black Hills Security Team. We have a few of these decks in our inventory that can be played with at meetings. Just ask ahead so a copy can be brought to play!",
+      "availability": "Available",
+      "link": "https://www.blackhillsinfosec.com/projects/backdoorsandbreaches/"
+    },
+    {
+      "name": "Hak5 USB Rubber Ducky",
+      "type": "security",
+      "image": "./images/hak5ducky_rental.png",
+      "description": "The infamous Rubber Ducky keystroke injection tool from Hak5. Acts as a keyboard and mouse and is programmed in duckyscript.",
+      "availability": "Unavailable",
+      "link": "https://hakshop.myshopify.com/products/usb-rubber-ducky"
+    },
+    {
+      "name": "Software Defined Radio",
+      "type": "communication",
+      "image": "./images/terrestrialusb_rental.jpg",
+      "description": "The Terrestrial Receiver is usb receiver designed to receive over the air TV-channels. When plugged in though, this is just a software defined radio with a Realtek RTL2838 chipset, with the ability to pick up more things like radio.",
+      "availability": "Available",
+      "link": "https://securitronlinux.com/debian-testing/rtl-sdr-on-linux-with-a-rtl2838-dvb-t-dongle/"
+    },
+    {
+      "name": "Antenex YE240015 Antenna",
+      "type": "communication",
+      "image": "./images/antennex_rental.jpg",
+      "description": "A waterproof antenna rated for outdoor use, with an adapter to change what it can work with. It is built to work best with the 2.4GHz frequency range. Alongside receiving radio signals.",
+      "availability": "Available",
+      "link": "https://www.arcantenna.com/products/laird-ye240015-2400-2500-mhz-fully-enclosed-15-dbi-outdoor-yagi-with-18-inch-pigtail-and-n-female-connector"
+    },
+    {
+      "name": "Hawkings Technology Antenna",
+      "type": "communication",
+      "image": "./images/hawking_rental.jpg",
+      "description": "This antenna serves as a valuable tool for hands-on learning and experimentation. Investigate signal strength, coverage extension, and network performance in a controlled environment.",
+      "availability": "Available",
+      "link": "https://www.hawkingtech.com/product/hai15sc/"
+    },
+    {
+      "name": "Flip Camera",
+      "type": "recording",
+      "image": "./images/cameratripod_rental.jpg",
+      "description": "The camera equipment used to record meetings, normally not available to rent, but an exception could be made if a good cause is found. There is no picture at this time, but you can come see it at the meetings!",
+      "availability": "Available",
+      "link": ""
+    },
+    {
+      "name": "Single IDE Cable",
+      "type": "misc",
+      "image": "./images/IDEcable_rental.jpg",
+      "description": "A single untested IDE cable. No idea where it came from, no idea where it's going. All with no devices to use it with.",
+      "availability": "Available",
+      "link": "https://www.lifewire.com/what-is-an-ide-cable-2625908"
+    }
+  ]
+}

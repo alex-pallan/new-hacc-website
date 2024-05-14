@@ -1,0 +1,26 @@
+{
+    "club-info": [
+      {
+        "name": "Hacking and Cyber Security Club",
+        "abbreviation": "HACC",
+        "email": "hacc-cabinet@iastate.edu"
+      }
+    ],
+    "meeting-info": [
+        {
+            "current-semester": "Spring 2024",
+            "day": "Thursday",
+            "start-time": "6PM",
+            "end-time": "7PM",
+            "location": "Coover 1011"
+        }
+    ],
+    "links": [
+      {
+        "discord": "https://discord.gg/3xxec7V5zN",
+        "github": "https://github.com/ISU-HACC",
+        "facebook": "https://www.facebook.com/infasgroup",
+        "youtube": "https://www.youtube.com/channel/UC-rLOtGfHGx9N1mlNNEwJNQ"
+      }
+    ]
+  }

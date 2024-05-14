@@ -1,0 +1,44 @@
+[
+  {
+    "name": "BYUCTF 2024",
+    "date": "2024-05-17",
+    "category": "<i class='bi bi-flag'></i> CTF",
+    "linkTitle": "CTF Website",
+    "linkURL": "https://ctfd.cyberjousting.com/"
+  },
+  {
+    "name": "Fall Semester Start",
+    "date": "2024-08-26",
+    "category": "<i class='bi bi-mortarboard'></i> Academic",
+    "linkTitle": "Academic Dates",
+    "linkURL": "https://www.registrar.iastate.edu/calendar/future"
+  },
+  {
+    "name": "Iowa State CDC",
+    "date": "2024-09-27",
+    "category": "<i class='bi bi-crosshair'></i> CDC",
+    "linkTitle": "More Info",
+    "linkURL": "https://cdc.iseage.org/about/"
+  },
+  {
+    "name": "Community College CDC",
+    "date": "2024-12-07",
+    "category": "<i class='bi bi-crosshair'></i> CDC",
+    "linkTitle": "More Info",
+    "linkURL": "https://cdc.iseage.org/about/"
+  },
+  {
+    "name": "International CDC",
+    "date": "2025-02-22",
+    "category": "<i class='bi bi-crosshair'></i> CDC",
+    "linkTitle": "More Info",
+    "linkURL": "https://cdc.iseage.org/about/"
+  },
+  {
+    "name": "Iowa State CDC",
+    "date": "2025-03-28",
+    "category": "<i class='bi bi-crosshair'></i> CDC",
+    "linkTitle": "More Info",
+    "linkURL": "https://cdc.iseage.org/about/"
+  }
+]
