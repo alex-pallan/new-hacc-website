@@ -227,7 +227,7 @@
     ></script>
     <script>
       // Fill the Upcoming Events with the data from /documents/events.json
-      fetch("/documents/events.json")
+      fetch("./documents/events.json")
         .then((response) => response.json())
         .then((data) => {
           // Get the container where the cards will be added
