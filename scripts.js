@@ -161,3 +161,48 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
   }
 });
+
+//Insert info from info.json into spans
+function fetchInfo() {
+  fetch("/documents/info.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const clubName = data["club-info"][0]["name"];
+      const clubNameSpans = document.querySelectorAll(".insert-club-name");
+      clubNameSpans.forEach((span) => {
+        span.textContent = clubName;
+      });
+
+      const currentSemester = data["meeting-info"][0]["current-semester"];
+      const currentSemesterSpans = document.querySelectorAll(
+        ".insert-current-semester"
+      );
+      currentSemesterSpans.forEach((span) => {
+        span.textContent = currentSemester;
+      });
+      const day = data["meeting-info"][0]["day"];
+      const daySpans = document.querySelectorAll(".insert-day");
+      daySpans.forEach((span) => {
+        span.textContent = day;
+      });
+      const startTime = data["meeting-info"][0]["start-time"];
+      const startTimeSpans = document.querySelectorAll(".insert-start-time");
+      startTimeSpans.forEach((span) => {
+        span.textContent = startTime;
+      });
+      const endTime = data["meeting-info"][0]["end-time"];
+      const endTimeSpans = document.querySelectorAll(".insert-end-time");
+      endTimeSpans.forEach((span) => {
+        span.textContent = endTime;
+      });
+      const location = data["meeting-info"][0]["location"];
+      const locationSpans = document.querySelectorAll(".insert-location");
+      locationSpans.forEach((span) => {
+        span.textContent = location;
+      });
+    })
+    .catch((error) => console.error("Error fetching club info:", error));
+}
+
+// Call fetchInfo function when the page loads
+document.addEventListener("DOMContentLoaded", fetchInfo);

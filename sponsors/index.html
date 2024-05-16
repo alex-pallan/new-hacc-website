@@ -42,19 +42,51 @@
         <a href="mailto:hacc-cabinet@iastate.edu">hacc-cabinet@iastate.edu</a>.
       </p>
       <hr class="hr-gradient" />
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <a href="https://www.collinsaerospace.com/">
-            <div class="card text-bg-dark hacc-box p-3">
-              <img
-                src="https://prd-sc102-cdn.rtx.com/-/media/themes/raytheon-technologies/rtx-shared/rtx-theme/images/collins_logo.svg?rev=01b55d379b01426dbc956e69cbe86350&w=354&hash=E01712A34EC1BE701F84E3E398AFAE11"
-                class="card-img"
-                style="filter: brightness(0) invert(1)"
-                alt="Collins Aerospace"
-              />
-            </div>
-          </a>
-        </div>
+      <div id="sponsors" class="row row-cols-1 row-cols-md-2 g-4">
+        Please enable JavaScript
+        <script>
+          // Function to fetch JSON data from sponsors.json
+          document.getElementById("sponsors").innerHTML = "";
+          function fetchSponsors() {
+            fetch("/documents/sponsors.json")
+              .then((response) => response.json())
+              .then((data) => {
+                // Iterate over each sponsor and create a card
+                data.forEach((sponsor) => {
+                  createCard(sponsor);
+                });
+              })
+              .catch((error) =>
+                console.error("Error fetching sponsors:", error)
+              );
+          }
+
+          // Function to create a card for a sponsor
+          function createCard(sponsor) {
+            // Create card elements
+            const cardDiv = document.createElement("div");
+            cardDiv.classList.add("col");
+            cardDiv.classList.add("align-self-center");
+            const cardLink = document.createElement("a");
+            cardLink.href = sponsor["link"];
+            const card = document.createElement("div");
+            card.classList.add("card", "text-bg-dark", "hacc-box", "p-3");
+            const cardImg = document.createElement("img");
+            cardImg.src = sponsor["image-url"];
+            cardImg.classList.add("card-img");
+            cardImg.style.filter = "brightness(0) invert(1)";
+            cardImg.alt = sponsor["sponsor-name"];
+
+            // Append elements
+            cardLink.appendChild(cardImg);
+            card.appendChild(cardLink);
+            cardDiv.appendChild(card);
+            document.getElementById("sponsors").appendChild(cardDiv);
+          }
+
+          // Call fetchSponsors function when the page loads
+          document.addEventListener("DOMContentLoaded", fetchSponsors);
+        </script>
       </div>
     </div>
     <div id="hacc-footer">

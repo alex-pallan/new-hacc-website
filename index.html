@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
   <meta charset="UTF-8" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="pragma" content="no-cache" />
   <title>HACC</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <!-- Custom Font (JetBrains Mono) -->
@@ -37,7 +40,7 @@
     <!-- Start Hero Section -->
     <div class="container-xl pt-2 pb-2">
       <h1 class="mt-4" style="font-weight: 700">
-        Hacking and Cyber Security Club
+        <span class="insert-club-name"></span>
       </h1>
       <p class="text-body-secondary">
         <a
@@ -55,20 +58,19 @@
       <hr class="hr-gradient" />
       <div class="m-4 p-2 text-center hacc-box">
         <h3>
-          Explore cyber security weekly, covering hacking, vulnerabilities, with
-          guest speakers and interactive workshops.
+          Hacking, vulnerabilities, with guest speakers and interactive
+          workshops!
         </h3>
       </div>
       <div class="m-4 p-2 text-center hacc-box">
         <h3>
-          Connect with industry leaders, discuss radio, OS, and networking, in
-          our welcoming environment.
+          Connect with industry leaders, discuss radio, OS, and networking!
         </h3>
       </div>
       <div class="m-4 p-2 text-center hacc-box">
         <h3>
-          From novices to experts, deepen your infosec understanding through
-          engaging sessions and presentations.
+          Deepen your infosec understanding through engaging sessions and
+          presentations!
         </h3>
       </div>
       <div class="d-flex flex-column align-items-center">
@@ -90,7 +92,9 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-3" id="exampleModalLabel">Join Us</h1>
+                <h1 class="modal-title fs-3" id="exampleModalLabel">
+                  <span class="insert-current-semester"></span>
+                </h1>
                 <button
                   type="button"
                   class="btn-close"
@@ -100,16 +104,20 @@
               </div>
               <div class="modal-body">
                 <h5>
-                  Interested in becoming a member of the Hacking and Cyber
-                  Security Club? Here's how you can get involved:
+                  Interested in becoming a member of the
+                  <span class="insert-club-name"></span>? Here's how you can get
+                  involved:
                 </h5>
                 <hr />
                 <ol class="list-group list-group-numbered list-group-flush">
                   <li class="list-group-item">
-                    <b>Weekly Meetings</b>: Join us every Thursday at 6:00PM in
-                    Coover 1011 for our weekly meetings. No prior experience is
-                    necessary, just show up and participate! Check our events
-                    calendar for the latest schedule.
+                    <b>Weekly Meetings</b>: Join us every
+                    <span class="insert-day"></span> at
+                    <span class="insert-start-time"></span> at
+                    <span class="insert-location"></span> for our weekly
+                    meetings. No prior experience is necessary, just show up and
+                    participate! Check our events calendar for the latest
+                    schedule.
                   </li>
                   <li class="list-group-item">
                     <b>Discord Community</b>: Connect with us on Discord, where
@@ -133,7 +141,7 @@
         </div>
         <!-- End Join Us Modal --><a
           class="btn btn-sm learn-more-btn m-1 py-2 px-4"
-          href="/about"
+          href="./about"
           role="button"
           >Learn More</a
         >
@@ -195,24 +203,57 @@
     <div class="container-xl">
       <a href="/sponsors.html" style="color: inherit; text-decoration: none">
         <h2>
-          Club Sponsors <a href="/sponsors"><i class="bi bi-link-45deg"></i></a>
+          Club Sponsors
+          <a href="./sponsors"><i class="bi bi-link-45deg"></i></a>
         </h2>
         <p>Thank you to our sponsors!</p></a
       >
       <hr class="hr-gradient" />
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <a href="https://www.collinsaerospace.com/">
-            <div class="card text-bg-dark hacc-box p-3">
-              <img
-                src="https://prd-sc102-cdn.rtx.com/-/media/themes/raytheon-technologies/rtx-shared/rtx-theme/images/collins_logo.svg?rev=01b55d379b01426dbc956e69cbe86350&w=354&hash=E01712A34EC1BE701F84E3E398AFAE11"
-                class="card-img"
-                style="filter: brightness(0) invert(1)"
-                alt="Collins Aerospace"
-              />
-            </div>
-          </a>
-        </div>
+      <div id="sponsors" class="row row-cols-1 row-cols-md-2 g-4">
+        Please enable JavaScript
+        <script>
+          // Function to fetch JSON data from sponsors.json
+          document.getElementById("sponsors").innerHTML = "";
+          function fetchSponsors() {
+            fetch("./documents/sponsors.json")
+              .then((response) => response.json())
+              .then((data) => {
+                // Iterate over each sponsor and create a card
+                data.forEach((sponsor) => {
+                  createCard(sponsor);
+                });
+              })
+              .catch((error) =>
+                console.error("Error fetching sponsors:", error)
+              );
+          }
+
+          // Function to create a card for a sponsor
+          function createCard(sponsor) {
+            // Create card elements
+            const cardDiv = document.createElement("div");
+            cardDiv.classList.add("col");
+            cardDiv.classList.add("align-self-center");
+            const cardLink = document.createElement("a");
+            cardLink.href = sponsor["link"];
+            const card = document.createElement("div");
+            card.classList.add("card", "text-bg-dark", "hacc-box", "p-3");
+            const cardImg = document.createElement("img");
+            cardImg.src = sponsor["image-url"];
+            cardImg.classList.add("card-img");
+            cardImg.style.filter = "brightness(0) invert(1)";
+            cardImg.alt = sponsor["sponsor-name"];
+
+            // Append elements
+            cardLink.appendChild(cardImg);
+            card.appendChild(cardLink);
+            cardDiv.appendChild(card);
+            document.getElementById("sponsors").appendChild(cardDiv);
+          }
+
+          // Call fetchSponsors function when the page loads
+          document.addEventListener("DOMContentLoaded", fetchSponsors);
+        </script>
       </div>
     </div>
     <!-- End Sponsors Section -->

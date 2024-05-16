@@ -183,3 +183,9 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(90deg, transparent, #3C5F73, transparent);
   height: 2px;
 }
+
+.accordion {
+  --bs-accordion-active-color: white;
+  --bs-accordion-active-bg: #3C5F73;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(60,95,115,0.5);
+}
