@@ -167,7 +167,7 @@
     </div>
     <script>
       // Function to fetch JSON data and update HTML content for meeting and announcements
-      fetch("/documents/info.json")
+      fetch("./documents/info.json")
         .then((response) => response.json())
         .then((data) => {
           document.getElementById("meeting-info").innerHTML =
