@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="new-hacc-website/equipment">Equipment</a>
+                        <a class="nav-link" href="/new-hacc-website/equipment">Equipment</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a
@@ -64,13 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="new-hacc-website/about">About HACC</a>
+                                <a class="dropdown-item" href="/new-hacc-website/about">About HACC</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="new-hacc-website/projects">Projects</a>
+                                <a class="dropdown-item" href="/new-hacc-website/projects">Projects</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="new-hacc-website/sponsors/">Sponsors</a>
+                                <a class="dropdown-item" href="/new-hacc-website/sponsors/">Sponsors</a>
                             </li>
                         </ul>
                     </li>
