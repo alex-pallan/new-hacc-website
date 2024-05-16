@@ -9,77 +9,77 @@ document.addEventListener("DOMContentLoaded", function () {
     // Replace the content of the "hacc-navbar" div with the navbar HTML
     haccNavbar.innerHTML = `
           <!-- Start navbar -->
-          <div class="container-xxl pt-2">
-              <nav class="navbar navbar-expand-lg m-2 mt-0">
-                  <div class="container-fluid">
-                      <a class="navbar-brand fs-2" href="/">./HACC</a>
-                      <button
-                          class="navbar-toggler"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#navbarNav"
-                          aria-controls="navbarNav"
-                          aria-expanded="false"
-                          aria-label="Toggle navigation"
-                      >
-                          <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                          <ul class="navbar-nav ms-auto">
-                              <li class="nav-item">
-                                  <a class="nav-link" href="/">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link disabled" href="/meetings.html">Meetings</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a
-                                      class="nav-link dropdown-toggle"
-                                      role="button"
-                                      data-bs-toggle="dropdown"
-                                      aria-expanded="false"
-                                  >
-                                      Learn
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                      <li>
-                                          <a class="dropdown-item" href="/learn/puzzlers">Puzzlers</a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="https://iasg.github.io/CDCHelpSite/">CDC Help <i class="bi bi-box-arrow-up-right"></i></a>
-                                      </li>
-                                  </ul>
-                              </li>
-                              <li class="nav-item">
-                              <a class="nav-link" href="/equipment/">Equipment</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a
-                                      class="nav-link dropdown-toggle"
-                                      role="button"
-                                      data-bs-toggle="dropdown"
-                                      aria-expanded="false"
-                                  >
-                                      About Us
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                      <li>
-                                          <a class="dropdown-item " href="/about">About HACC</a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="/projects">Projects</a>
-                                      </li>
-                                      <li>
-                                          <a class="dropdown-item" href="/sponsors">Sponsors</a>
-                                      </li>
-                                  </ul>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </nav>
-          </div>
-          <!-- End navbar -->
+<div class="container-xxl pt-2">
+    <nav class="navbar navbar-expand-lg m-2 mt-0">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" href="{{ site.baseurl }}/index.html">./HACC</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="{{ site.baseurl }}/meetings/index.html">Meetings</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="{{ site.baseurl }}/learn/puzzlers/index.html">Puzzlers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://iasg.github.io/CDCHelpSite/">CDC Help <i class="bi bi-box-arrow-up-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/equipment/index.html">Equipment</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="{{ site.baseurl }}/about/index.html">About HACC</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{{ site.baseurl }}/projects/index.html">Projects</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{{ site.baseurl }}/sponsors/index.html">Sponsors</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- End navbar -->
       `;
   }
 
