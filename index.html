@@ -142,7 +142,7 @@
     <!-- End Hero Section -->
     <hr class="my-5" />
     <div class="container-xl">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="row row-cols-1 row-cols-xl-2 g-4">
         <div class="col">
           <h2>This week's meeting</h2>
           <hr class="hr-gradient" />
@@ -150,8 +150,7 @@
             class="hacc-box d-flex flex-column justify-content-center align-items-center text-center"
             style="height: 10rem"
           >
-            <h3>No meetings until fall.</h3>
-            <h4>Have a good summer! <i class="bi bi-emoji-smile"></i></h4>
+            <h3 id="meeting-info">Please enable JavaScript</h3>
           </div>
         </div>
         <div class="col">
@@ -161,11 +160,23 @@
             class="hacc-box d-flex flex-column justify-content-center align-items-center text-center"
             style="height: 10rem"
           >
-            <h3>Congratulations to the new cabinet!</h3>
+            <h3 id="announcement-info">Please enable JavaScript</h3>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      // Function to fetch JSON data and update HTML content for meeting and announcements
+      fetch("/documents/info.json")
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById("meeting-info").innerHTML =
+            data["main-page"][0]["This week's meeting"];
+          document.getElementById("announcement-info").innerHTML =
+            data["main-page"][0]["Announcements"];
+        })
+        .catch((error) => console.error("Error fetching JSON:", error));
+    </script>
     <hr class="my-5" />
     <!-- Events Section -->
     <div class="container-xl">
@@ -174,7 +185,8 @@
       <hr class="hr-gradient" />
 
       <div class="upcoming-events hacc-box p-2" id="upcoming-events">
-        <!-- JavaScript will populate this div with upcoming events -->
+        <!-- JavaScript will populate this div with upcoming events -->Please
+        enable JavaScript
       </div>
     </div>
     <!-- End Events Section -->
@@ -220,6 +232,7 @@
         .then((data) => {
           // Get the container where the cards will be added
           const container = document.getElementById("upcoming-events");
+          container.innerHTML = "";
 
           // Loop through each event in the JSON data
           data.forEach((event) => {
