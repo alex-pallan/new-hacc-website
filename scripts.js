@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="container-xxl pt-2">
     <nav class="navbar navbar-expand-lg m-2 mt-0">
         <div class="container-fluid">
-            <a class="navbar-brand fs-2" href="{{ site.baseurl }}/index.html">./HACC</a>
+            <a class="navbar-brand fs-2" href="/new-hacc-website">./HACC</a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/index.html">Home</a>
+                        <a class="nav-link" href="/new-hacc-website">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="{{ site.baseurl }}/meetings/index.html">Meetings</a>
+                        <a class="nav-link disabled" href="/new-hacc-website/meetings">Meetings</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="{{ site.baseurl }}/learn/puzzlers/index.html">Puzzlers</a>
+                                <a class="dropdown-item" href="new-hacc-website/learn/puzzlers">Puzzlers</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="https://iasg.github.io/CDCHelpSite/">CDC Help <i class="bi bi-box-arrow-up-right"></i></a>
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/equipment/index.html">Equipment</a>
+                        <a class="nav-link" href="new-hacc-website/equipment">Equipment</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a
@@ -64,13 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="{{ site.baseurl }}/about/index.html">About HACC</a>
+                                <a class="dropdown-item" href="new-hacc-website/about">About HACC</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="{{ site.baseurl }}/projects/index.html">Projects</a>
+                                <a class="dropdown-item" href="new-hacc-website/projects">Projects</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="{{ site.baseurl }}/sponsors/index.html">Sponsors</a>
+                                <a class="dropdown-item" href="new-hacc-website/sponsors/">Sponsors</a>
                             </li>
                         </ul>
                     </li>
