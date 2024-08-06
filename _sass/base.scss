@@ -1,9 +1,24 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
+// Include any default variable overrides here (though functions won't be available)
+$primary:       #576B66;
+$body-bg-dark:                      #0F1414;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$navbar-brand-font-size:            $font-size-base * 2;
+
+// Fonts
+$font-family-sans-serif:      "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;;
+$font-family-monospace:       "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+@import "../bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+.navbar-brand {
+  font-weight: $font-weight-bold;
+}
+
+.navbar {
+  border: 1px solid $primary;
+  border-bottom-width: 5px;
 }
