@@ -36,6 +36,7 @@ sass:
   load_paths:
     - _sass
     - _bootstrap/scss # Ensure this is the correct relative path to your Bootstrap SCSS
+    - _bootstrap/scss/vendor
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
