@@ -8,6 +8,7 @@ $font-family-sans-serif: "JetBrains Mono", monospace;
 
 
 @import "bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 // Then add additional custom code here
 .navbar {
@@ -18,4 +19,33 @@ $font-family-sans-serif: "JetBrains Mono", monospace;
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.navbar-toggler {
+    border-radius: 0;
+    border-color: var(--bs-primary);
+    :active {
+        box-shadow: none;
+    }
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border-color: var(--bs-primary);
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.badge {
+    border-radius: 0;
 }
