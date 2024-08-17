@@ -1,9 +1,11 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 // Include any default variable overrides here (though functions won't be available)
 $primary: #576B66;
 $body-bg-dark: #0F1414;
+$font-family-sans-serif: "JetBrains Mono", monospace;
+
 
 @import "bootstrap";
 
@@ -11,4 +13,9 @@ $body-bg-dark: #0F1414;
 .navbar {
     border-bottom-width: 5px !important;
     background-color: rgba(255, 255, 255, 0.01);
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
 }
