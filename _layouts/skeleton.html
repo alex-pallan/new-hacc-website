@@ -3,9 +3,9 @@
   <meta charset="UTF-8" />
   <title>{{ page.title }}_{{ site.title }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
   <body data-bs-theme="dark">
     {% include navbar.html %} {{ content }} {% include footer.html %}
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
