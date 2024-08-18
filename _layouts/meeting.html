@@ -2,4 +2,19 @@
 layout: skeleton
 ---
 
-{{ content }}
+<div class="container">
+  <h1>{{ page.title }}</h1>
+  <hr />
+  <iframe
+    width="100%"
+    src="{{ page.youtube }}"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    class="border border-primary"
+    style="border-bottom-width: 5px !important; aspect-ratio: 16 / 9"
+  ></iframe>
+  {{ content }}
+</div>
