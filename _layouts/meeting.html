@@ -3,7 +3,31 @@ layout: skeleton
 ---
 
 <div class="container">
-  <h1>{{ page.title }}</h1>
+  <div class="row">
+    <div class="col">
+      <h3>{{ page.title }}</h3>
+      <h4 class="text-secondary">{{ page.date | date: "%b %d, %Y" }}</h4>
+      <h5>
+        {% for tag in page.tags %}
+        <span class="badge text-bg-primary">{{ tag }}</span>
+        {% endfor %}
+      </h5>
+    </div>
+    <div class="col-2 d-flex justify-content-end align-items-center">
+      <a
+        href="{{ site.baseurl }}/meetings"
+        target="_self"
+        class="btn btn-outline-primary mb-3 d-none d-md-block"
+        ><i class="bi bi-caret-left"></i> Go back</a
+      >
+      <a
+        href="{{ site.baseurl }}/meetings"
+        target="_self"
+        class="btn btn-outline-primary mb-3 d-md-none"
+        >Go back</a
+      >
+    </div>
+  </div>
   <hr />
   <iframe
     width="100%"
@@ -16,5 +40,12 @@ layout: skeleton
     class="border border-primary"
     style="border-bottom-width: 5px !important; aspect-ratio: 16 / 9"
   ></iframe>
-  {{ content }}
+  <div
+    class="border border-primary p-2"
+    style="border-bottom-width: 5px !important"
+  >
+    <h4>Description</h4>
+    <hr />
+    {{ content }}
+  </div>
 </div>

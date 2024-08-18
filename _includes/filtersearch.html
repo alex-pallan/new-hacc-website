@@ -1,0 +1,43 @@
+<div
+  class="w-100 border border-primary p-2 mb-3"
+  style="border-bottom-width: 5px !important"
+>
+  <div class="row">
+    <div class="col">
+      <div class="dropdown">
+        <button
+          class="btn btn-outline-primary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Filter
+        </button>
+        <ul class="dropdown-menu">
+          {% for tag in site.tags %}
+          <li><a class="dropdown-item" href="#">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2 ms-auto"
+          type="search"
+          style="width: 18rem"
+          placeholder="Search"
+          aria-label="Search"
+          disabled
+        />
+        <button
+          class="btn btn-outline-primary disabled"
+          aria-disabled="true"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
