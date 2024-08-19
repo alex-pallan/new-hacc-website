@@ -1,0 +1,15 @@
+- title: Home
+  url: /
+- title: Meetings
+  url: /meetings
+- title: Learn
+  dropdown:
+    - title: Puzzlers
+      url: /learn/puzzlers
+    - title: CDC Help
+      url: https://example.com
+      external: true
+- title: Equipment
+  url: /equipment
+- title: Sponsors
+  url: /sponsors
