@@ -5,7 +5,7 @@ permalink: /meetings/
 ---
 
 <div class="container"><h1 class="ms-1">Meetings</h1>
-<span class="text-secondary"><b>Interested in speaking?</b> Contact us at <a class="link-secondary" href="mailto:{{ site.email }}">{{ site.email }}</a>!</span>
+<span class="ms-1 text-secondary"><b>Interested in speaking?</b> Contact us at <a class="link-secondary" href="mailto:{{ site.email }}">{{ site.email }}</a>!</span>
 <hr />
 {% include filtersearch.html %}
 {% include meetinglist.html %}</div>

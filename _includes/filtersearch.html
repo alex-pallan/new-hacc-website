@@ -11,7 +11,7 @@
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          Filter
+          <i class="bi bi-funnel"></i> Filter
         </button>
         <ul class="dropdown-menu">
           {% assign tags = "" %} {% for meeting in site.meetings %} {% for tag
@@ -33,7 +33,7 @@
         class="btn btn-primary"
         style="display: none"
       >
-        Clear Filter
+        <i class="bi bi-x-lg"></i> Clear Filter
       </button>
     </div>
     <div class="col">
