@@ -1,4 +1,5 @@
 ---
+# THIS IS THE PAGE LOCATED AT /meetings/ NOT A MEETING
 layout: skeleton
 title: Meetings
 permalink: /meetings/

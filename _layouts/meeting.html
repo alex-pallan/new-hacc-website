@@ -29,19 +29,29 @@ layout: skeleton
     </div>
   </div>
   <hr />
+  {% if page.ytvidid %}
   <iframe
     width="100%"
-    src="{{ page.youtube }}"
+    src="https://youtube.com/embed/{{ page.ytvidid }}"
     title="YouTube video player"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
-    class="border border-primary"
+    class="border border-primary my-2"
     style="border-bottom-width: 5px !important; aspect-ratio: 16 / 9"
-  ></iframe>
+  ></iframe
+  >{% else %}
+  <div class="ratio ratio-16x9 position-relative bg-primary my-2">
+    <img
+      src="{{ site.baseurl }}/assets/img/novid.svg"
+      class="card-img-top"
+      alt="{% if meeting.thumbnail %}{{ meeting.title }}{% else %}No image{% endif %}"
+    />
+  </div>
+  {% endif %}
   <div
-    class="border border-primary p-2"
+    class="border border-primary p-2 my-2"
     style="border-bottom-width: 5px !important"
   >
     <h4>Description</h4>

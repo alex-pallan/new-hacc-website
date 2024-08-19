@@ -1,9 +1,15 @@
 ---
 layout: meeting
+
 title: Showing the Dangers of USB (by stealing discord creds with rubber duckies)
+
+# YYYY-MM-DD
 date: 2022-11-02
-youtube: https://www.youtube.com/embed/2hxD1nDvafE?si=ZrJxVPP_anLai2aT
-thumbnail: https://i.ytimg.com/vi/2hxD1nDvafE/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IFsoJjAP&rs=AOn4CLDlOs_55x4i-yoY1u0O7sJ-A1myGw
+
+# YouTube Video ID - Found at the end of the URL of the YouTube video. Used to grab the thumbnail and the video embed.
+ytvidid: 2hxD1nDvafE
+
+# Seperate tags with spaces. If the tag itself has a space in it, use &nbsp; instead
 tags: Rubber&nbsp;Ducky USB Credential&nbsp;Harvesting
 #Enter the description after the front matter
 ---
