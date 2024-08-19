@@ -2,7 +2,10 @@
   {% for meeting in site.meetings %} {% unless meeting.path contains "index.md"
   %}
   <div class="col">
-    <div class="card h-100 d-flex flex-column">
+    <div
+      class="card h-100 d-flex flex-column"
+      data-tags="{{ meeting.tags | join: ',' }}"
+    >
       <img
         src="{% if meeting.thumbnail %}{{ meeting.thumbnail }}{% else %}{{ site.baseurl }}/assets/img/noimg.svg{% endif %}"
         class="card-img-top"
@@ -35,3 +38,29 @@
   </div>
   {% endunless %} {% endfor %}
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tag = urlParams.get("tag");
+    const clearFilterBtn = document.getElementById("clear-filter-btn");
+
+    // Show the clear filter button if a tag is present in the URL
+    if (tag) {
+      clearFilterBtn.style.display = "inline-block"; // Make the button visible next to the dropdown
+      clearFilterBtn.addEventListener("click", function () {
+        window.location.href = window.location.pathname; // Clears the filter
+      });
+    }
+
+    // Filter meetings based on the tag if present
+    const meetings = document.querySelectorAll(".card");
+    if (tag) {
+      meetings.forEach(function (meeting) {
+        const meetingTags = meeting.getAttribute("data-tags").split(",");
+        if (!meetingTags.includes(tag.trim())) {
+          meeting.parentElement.style.display = "none"; // Hide the meeting card
+        }
+      });
+    }
+  });
+</script>

@@ -3,7 +3,7 @@
   style="border-bottom-width: 5px !important"
 >
   <div class="row">
-    <div class="col">
+    <div class="col-auto">
       <div class="dropdown">
         <button
           class="btn btn-outline-primary dropdown-toggle"
@@ -14,11 +14,27 @@
           Filter
         </button>
         <ul class="dropdown-menu">
-          {% for tag in site.tags %}
-          <li><a class="dropdown-item" href="#">{{ tag }}</a></li>
-          {% endfor %}
+          {% assign tags = "" %} {% for meeting in site.meetings %} {% for tag
+          in meeting.tags %} {% assign tags = tags | append: tag | append: ","
+          %} {% endfor %} {% endfor %} {% assign tags_array = tags | split: ","
+          | uniq | sort %} {% for tag in tags_array %} {% if tag != "" %}
+          <li>
+            <a class="dropdown-item" href="?tag={{ tag | uri_escape }}"
+              >{{ tag }}</a
+            >
+          </li>
+          {% endif %} {% endfor %}
         </ul>
       </div>
+    </div>
+    <div class="col-auto">
+      <button
+        id="clear-filter-btn"
+        class="btn btn-primary"
+        style="display: none"
+      >
+        Clear Filter
+      </button>
     </div>
     <div class="col">
       <form class="d-flex" role="search">

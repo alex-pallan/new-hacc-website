@@ -4,5 +4,8 @@ title: Meetings
 permalink: /meetings/
 ---
 
-<div class="container"><h1 class="ms-1">Meetings</h1><hr />{% include filtersearch.html %}
+<div class="container"><h1 class="ms-1">Meetings</h1>
+<span class="text-secondary"><b>Interested in speaking?</b> Contact us at <a class="link-secondary" href="mailto:{{ site.email }}">{{ site.email }}</a>!</span>
+<hr />
+{% include filtersearch.html %}
 {% include meetinglist.html %}</div>
