@@ -14,6 +14,8 @@ $font-family-sans-serif: "JetBrains Mono", monospace;
 .navbar {
     border-bottom-width: 5px !important;
     background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .navbar-brand {

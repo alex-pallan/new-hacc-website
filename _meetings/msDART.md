@@ -16,7 +16,7 @@ ytvidid: iCY_p4-8ARU
 
 # REQUIRED (at least one)
 # Seperate tags with spaces. If the tag itself has a space in it, use &nbsp; instead
-tags: Microsoft Defense Emergency&nbsp;Response
+tags: Microsoft Blue&nbsp;Team Emergency&nbsp;Response
 ---
 
 Today's meeting is a presentation from Microsoft's DaRT (Defence and Response Team). We get to hear a variety of tales and lessons from the frontline of cybersecurity at Microsoft.
