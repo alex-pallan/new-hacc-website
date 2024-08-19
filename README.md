@@ -13,6 +13,6 @@ This new site is built on two primary frameworks for ease of maintenance and mod
 It is beneficial for any members to learn these two tools, as they are quite powerful and potentially useful in their careers moving forward.
 
 ## Housekeeping
-This project is still work-in-progress and the first finished varient is expected to be pushed into production at [https://isu-hacc.github.io/](https://isu-hacc.github.io/) early in the **Fall 2024** semester.
+This project is still work-in-progress and the first finished varient is expected to be pushed into production at [https://isu-hacc.github.io/](https://isu-hacc.github.io/) early in the **Fall 2024** semester. For now, you can view the progress at [https://alex-pallan.github.io/new-hacc-website/](https://alex-pallan.github.io/new-hacc-website/).
 
 There are also plans for the website to be moved to a different domain in the future.
