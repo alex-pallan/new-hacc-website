@@ -37,7 +37,7 @@
             <li>
               <a
                 class="dropdown-item{% if normalized_page_url == normalized_subitem_url %} active{% endif %}"
-                href="{{ site.baseurl }}{{ subitem_full_url }}"
+                href="{% if subitem.external %}{{ subitem_full_url }}{% else %}{{ site.baseurl }}{{ subitem_full_url }}{% endif %}"
                 {%
                 if
                 subitem.external

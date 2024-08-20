@@ -1,67 +1,66 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 // Include any default variable overrides here (though functions won't be available)
-$primary: #576B66;
-$body-bg-dark: #0F1414;
+$primary: #576b66;
+$body-bg-dark: #0f1414;
 $font-family-sans-serif: "JetBrains Mono", monospace;
-
 
 @import "bootstrap";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 // Then add additional custom code here
 .navbar {
-    border-bottom-width: 5px !important;
-    background-color: rgba(255, 255, 255, 0.01);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  border-bottom-width: 5px !important;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar-toggler {
-    border-radius: 0;
-    border-color: var(--bs-primary);
-    :active {
-        box-shadow: none;
-    }
+  border-radius: 0;
+  border-color: var(--bs-primary);
+  :active {
+    box-shadow: none;
+  }
 }
 
 .dropdown-menu {
-    border-radius: 0;
-    border-color: var(--bs-primary);
+  border-radius: 0;
+  border-color: var(--bs-primary);
 }
 
 .card {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .card-img-top {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .btn {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .badge {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .form-control {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .alert {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .hr-gradient-left {
-    border: none;
-    background: linear-gradient(to right, var(--bs-primary), transparent);
-    height: 1px;
+  border: none;
+  background: linear-gradient(to right, var(--bs-primary), transparent);
+  height: 1px;
 }
