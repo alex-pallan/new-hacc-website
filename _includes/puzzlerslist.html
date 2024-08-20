@@ -1,0 +1,33 @@
+<h3>Linux&nbsp;Skills</h3>
+<hr class="hr-gradient-left" />
+{% for puzzler in site.puzzlers %} {% unless puzzler.path contains "index.md" %}
+<div class="card" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">{{ puzzler.title }}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      Difficulty:
+      <span
+        class="badge {% if puzzler.difficulty == 'Easy' %} text-bg-success {% elsif puzzler.difficulty == 'Medium' %} text-bg-warning {% elsif puzzler.difficulty == 'Hard' %} text-bg-danger {% else %} text-bg-primary {% endif %}"
+        >{{ puzzler.difficulty }}</span
+      >
+    </h6>
+    <p class="card-text">{{ puzzler.description }}</p>
+    <div class="text-center mt-4">
+      <a
+        href="{{ site.url }}{{ site.baseurl }}/assets/puzzlers/{{ puzzler.download }}"
+        type="button"
+        class="btn btn-outline-primary"
+        download
+      >
+        <i class="bi bi-download"></i> </a
+      ><br /><span class="text-secondary">{{ puzzler.download }}</span>
+    </div>
+  </div>
+  <div class="card-footer text-body-secondary">
+    Author: {% if puzzler.author %}{{ puzzler.author }}{% else %}HACC Member{%
+    endif %}
+    <br />
+    Posted: {{ puzzler.date | date: "%b %d, %Y" }}
+  </div>
+</div>
+{% endunless %} {% endfor %}

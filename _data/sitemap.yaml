@@ -5,7 +5,7 @@
 - title: Learn
   dropdown:
     - title: Puzzlers
-      url: /learn/puzzlers
+      url: /puzzlers
     - title: CDC Help
       url: https://example.com
       external: true

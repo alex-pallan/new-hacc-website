@@ -59,3 +59,9 @@ $font-family-sans-serif: "JetBrains Mono", monospace;
 .alert {
     border-radius: 0;
 }
+
+.hr-gradient-left {
+    border: none;
+    background: linear-gradient(to right, var(--bs-primary), transparent);
+    height: 1px;
+}
