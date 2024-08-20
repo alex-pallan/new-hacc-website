@@ -43,6 +43,11 @@ $font-family-sans-serif: "JetBrains Mono", monospace;
   border-radius: 0;
 }
 
+.card-img {
+  filter: brightness(0.25);
+  border-radius: 0;
+}
+
 .btn {
   border-radius: 0;
 }
