@@ -1,33 +1,38 @@
-<h3>Linux&nbsp;Skills</h3>
+{% assign filtered_puzzlers = site.puzzlers | reject: "path",
+"/puzzlers/index.md" %} {% assign categories = filtered_puzzlers | map:
+'category' | compact | uniq | sort %} {% for category in categories %}
+<h3 class="mt-3">{{ category }}</h3>
 <hr class="hr-gradient-left" />
-{% for puzzler in site.puzzlers %} {% unless puzzler.path contains "index.md" %}
-<div class="card" style="width: 18rem">
-  <div class="card-body">
+{% for puzzler in filtered_puzzlers %} {% if puzzler.category == category %}
+<div class="card d-inline-block" style="width: 18rem">
+  <div class="card-body d-flex flex-column" style="min-height: 18rem">
     <h5 class="card-title">{{ puzzler.title }}</h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">
       Difficulty:
       <span
         class="badge {% if puzzler.difficulty == 'Easy' %} text-bg-success {% elsif puzzler.difficulty == 'Medium' %} text-bg-warning {% elsif puzzler.difficulty == 'Hard' %} text-bg-danger {% else %} text-bg-primary {% endif %}"
-        >{{ puzzler.difficulty }}</span
       >
+        {{ puzzler.difficulty }}
+      </span>
     </h6>
     <p class="card-text">{{ puzzler.description }}</p>
-    <div class="text-center mt-4">
+    <div class="mt-auto text-center">
       <a
         href="{{ site.url }}{{ site.baseurl }}/assets/puzzlers/{{ puzzler.download }}"
         type="button"
         class="btn btn-outline-primary"
         download
       >
-        <i class="bi bi-download"></i> </a
-      ><br /><span class="text-secondary">{{ puzzler.download }}</span>
+        <i class="bi bi-download"></i>
+      </a>
+      <br />
+      <span class="text-secondary">{{ puzzler.download }}</span>
     </div>
   </div>
   <div class="card-footer text-body-secondary">
     Author: {% if puzzler.author %}{{ puzzler.author }}{% else %}HACC Member{%
-    endif %}
-    <br />
+    endif %}<br />
     Posted: {{ puzzler.date | date: "%b %d, %Y" }}
   </div>
 </div>
-{% endunless %} {% endfor %}
+{% endif %} {% endfor %} {% endfor %}
