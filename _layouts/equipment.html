@@ -9,7 +9,7 @@ layout: skeleton
     ><i class="bi bi-caret-left"></i> Go back</a
   >
   <img
-    src="{{ site.url }}{{ site.baseurl }}/assets/img/equipment/{{ page.image }}"
+    src="{% if page.image %}{{ site.url }}{{ site.baseurl }}/assets/img/equipment/{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}/assets/img/noimg.svg{% endif %}"
     class="w-100 border border-primary"
     style="border-bottom-width: 5px !important"
   />
@@ -21,7 +21,7 @@ layout: skeleton
     >
   </h3>
   <div
-    class="border border-primary p-2 my-2"
+    class="border border-primary overflow-x-hidden p-2 my-2"
     style="border-bottom-width: 5px !important"
   >
     <h4>Description</h4>

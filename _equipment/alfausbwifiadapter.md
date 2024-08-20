@@ -7,7 +7,7 @@ title: ALFA USB Wifi Adapter
 image: alfawifi_rental.jpeg
 
 # External link to the website of the equipment (optional)
-vendorsite: https://www.alfa.com.tw/products/awus036h?variant=36481029275720
+vendorsite: https://www.alfa.com.tw/products/awus036h
 
 # Must be Available or Unavailable
 availability: Available

@@ -8,7 +8,7 @@
       style="cursor: pointer !important"
     >
       <img
-        src="https://isu-hacc.github.io/assets/rentals/alfawifi_rental.JPG"
+        src="{% if equipment.image %}{{ site.url }}{{ site.baseurl }}/assets/img/equipment/{{ equipment.image }}{% else %}{{ site.url }}{{ site.baseurl }}/assets/img/noimg.svg{% endif %}"
         class="card-img"
         alt="..."
       />
