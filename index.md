@@ -6,4 +6,4 @@ layout: skeleton
 title: Home
 ---
 
-Hello, world!
+<div class="container">Hello, world!</div>
