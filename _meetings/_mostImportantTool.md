@@ -29,4 +29,4 @@ Meeting agenda:
 - A guide for dual-booting
 - Setting up Virtual Box and getting a VM (Virtual Machine) on
 
-Link to slides: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXBxdE1jSHZaTDhOTlZwMmhmYnhpNmtsb1BjQXxBQ3Jtc0ttWl95QVEzSHpUVUx6RTBZMlpqWmpDNWZjNjViWjdQcWxzX0J1WVZsS2txa0EzN01RazhqMTNLRDRJQ18wai1LaS16M19vWjNIRzgzNnl2dk14TlFETzc1cjVSZkJ3bW9LbWdrTzd0enZ2R01jOFpGMA&q=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1KLdtKXE3YQrkE8ydxW4Y6ScbKA0IYJruyShzrdf3xjY%2Fedit%3Fusp%3Dsharing&v=H17fPCEcKCs
+Link to slides: https://docs.google.com/presentation/d/1KLdtKXE3YQrkE8ydxW4Y6ScbKA0IYJruyShzrdf3xjY/edit?usp=sharing
