@@ -17,7 +17,7 @@ ytvidid: H17fPCEcKCs
 
 # REQUIRED (at least one)
 # Seperate tags with spaces. If the tag itself has a space in it, use &nbsp; instead
-tags: linux virtual&nbspmachines
+tags: linux virtual&nbsp;machines
 ---
 
 IASG 09/08/2022 meeting
