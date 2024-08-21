@@ -7,7 +7,6 @@ layout: meeting
 # REQUIRED
 title: The MOST important tool to start hacking | Setting up Linux (WSL, VM, and dual-boot)
 
-
 # REQUIRED
 # YYYY-MM-DD
 date: 2022-09-08
@@ -25,8 +24,9 @@ IASG 09/08/2022 meeting
 Today we talk about getting Linux running on your machine. This will get you a baseline for CTFs, CDCs, and hacking in the real world.
 
 Meeting agenda:
+
 - How to install and set up WSL
 - A guide for dual-booting
 - Setting up Virtual Box and getting a VM (Virtual Machine) on
 
-Link to slides: ```https://docs.google.com/presentation/d/1KLdtKXE3YQrkE8ydxW4Y6ScbKA0IYJruyShzrdf3xjY/edit?usp=sharing```
+[Link to slides](https://docs.google.com/presentation/d/1KLdtKXE3YQrkE8ydxW4Y6ScbKA0IYJruyShzrdf3xjY/edit?usp=sharing)
