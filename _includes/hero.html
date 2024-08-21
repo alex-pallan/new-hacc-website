@@ -1,0 +1,93 @@
+<div class="alert container alert-primary">
+  <div class="fw-bold fs-0 text-body">
+    HACC @ <span class="text-danger">ISU</span>
+  </div>
+  <div class="fs-2">
+    <b>H</b>acking <b>a</b>nd <b>C</b>yber Security <b>C</b>lub at
+    <span class="text-danger">Iowa State University</span>
+  </div>
+  <hr class="my-4" />
+  <div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button fs-3 text-body"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseOne"
+          >
+            <i class="bi bi-info-circle"></i>&nbsp;About Us
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body text-primary-emphasis">
+            <p>
+              The Hacking and Cyber Security Club (HACC), formerly the
+              Information Assurance Student Group, is a part of the Center for
+              Cybersecurity Innovation & Outreach at Iowa State University,
+              holds weekly meetings on cyber security topics. These meetings
+              consist of conference-style presentations about various
+              InfoSec-related topics including hacking, exploits, recent
+              vulnerabilities in the news, webapp vulnerabilities, and general
+              hacker subjects such as radio, operating systems, and networking.
+            </p>
+            <p>
+              We often feature guest speakers from the security field, as well
+              as offer introductory-level presentations for those interested in
+              security, but without an extensive background in designing and
+              building information systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-4" />
+  <div>
+    <h3 class="text-body">
+      <i class="bi bi-calendar"></i> Meeting Information - {{
+      site.data.current.semester }} {{ site.data.current.year }}
+    </h3>
+    <table class="table border table-striped fs-5">
+      <tbody>
+        <tr>
+          <td class="text-primary-emphasis">Time</td>
+          <td class="text-primary-emphasis">
+            {{ site.data.current.meetingtime }}
+          </td>
+        </tr>
+        <tr>
+          <td class="text-primary-emphasis">Location</td>
+          <td class="text-primary-emphasis">
+            {{ site.data.current.meetinglocation }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr class="my-4" />
+  <div>
+    <h3 class="text-body"><i class="bi bi-discord"></i> Discord</h3>
+    <p>
+      The primary communication that HACC uses outside of meetings is our
+      discord server. This Discord server is used to hang out and share
+      information between meetings. It's worth joining, since members will post
+      cool tricks, news stories, and other cyber security related things
+      throughout.
+    </p>
+    <a
+      href="{{ site.data.clubinfo.discordlink }}"
+      target="_blank"
+      class="btn btn-outline-primary w-100"
+      ><i class="bi bi-discord"></i> Join our Discord
+      <i class="bi bi-discord"></i
+    ></a>
+  </div>
+</div>

@@ -6,4 +6,5 @@ layout: skeleton
 title: Home
 ---
 
-<div class="container">Hello, world!</div>
+{% include announcement.html %}
+{% include hero.html %}
