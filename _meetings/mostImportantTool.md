@@ -10,7 +10,7 @@ title: The MOST important tool to start hacking | Setting up Linux (WSL, VM, and
 
 # REQUIRED
 # YYYY-MM-DD
-date: 2022-09-09
+date: 2022-09-08
 
 # YouTube Video ID - Found at the end of the URL of the YouTube video. Used to grab the thumbnail and the video embed.
 ytvidid: H17fPCEcKCs
@@ -29,4 +29,4 @@ Meeting agenda:
 - A guide for dual-booting
 - Setting up Virtual Box and getting a VM (Virtual Machine) on
 
-Link to slides: https://docs.google.com/presentation/d/1KLdtKXE3YQrkE8ydxW4Y6ScbKA0IYJruyShzrdf3xjY/edit?usp=sharing
+Link to slides: ```https://docs.google.com/presentation/d/1KLdtKXE3YQrkE8ydxW4Y6ScbKA0IYJruyShzrdf3xjY/edit?usp=sharing```
