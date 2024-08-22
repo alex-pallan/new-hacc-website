@@ -1,0 +1,22 @@
+---
+# FYI the title of the file itself is not important, but should be somewhat relevant
+
+# Keep this the same
+layout: meeting
+
+# REQUIRED
+title: Why Virtualization is Important
+
+
+# REQUIRED
+# YYYY-MM-DD
+date: 2021-10-12
+
+# YouTube Video ID - Found at the end of the URL of the YouTube video. Used to grab the thumbnail and the video embed.
+ytvidid: miR9CW5JEWI
+
+# REQUIRED (at least one)
+# Seperate tags with spaces. If the tag itself has a space in it, use &nbsp; instead
+tags: Virtual&nbsp;Machines Sandboxing
+---
+A talk about the basics of virtualization, why it is important.
