@@ -95,3 +95,8 @@ $font-family-sans-serif: "JetBrains Mono", monospace;
 .card-header {
   border-radius: 0 !important;
 }
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
