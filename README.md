@@ -21,6 +21,14 @@ Welcome to the official website repository for the Hacking and Cyber Security Cl
   - [Removing Meetings](#removing-meetings)
   - [Editing Existing Meetings](#editing-existing-meetings)
 - [**Web Chair**](#web-chair)
+  - [Running the Site Locally](#running-the-site-locally)
+  - [Prerequisites](#prerequisites)
+  - [Cloning the Repository](#cloning-the-repository)
+  - [Installing Dependencies](#installing-dependencies)
+  - [Running the Site](#running-the-site)
+  - [Making Changes](#making-changes)
+  - [Committing and Pushing Changes](#committing-and-pushing-changes)
+  - [Resources](#resources)
 
 ---
 
@@ -160,4 +168,50 @@ Details on how to add meetings to the site.
 
 ### Web Chair
 
-Responsibilities and tasks specific to the Web Chair.
+**Website responsibility:** Maintaining the structure and functionality of the website, including adding new features, fixing bugs, and updating content as needed.
+
+**Running the Site Locally:**
+
+To work on the website locally, follow these steps:
+
+1. **Prerequisites:**
+   - Ensure you have [Git](https://git-scm.com/), [Ruby](https://www.ruby-lang.org/en/documentation/installation/), [Jekyll](https://jekyllrb.com/docs/installation/), and [Bundler](https://bundler.io/) installed.
+
+2. **Cloning the Repository:**
+   - Clone the repository to your local machine:
+
+   ``` bash
+   git clone https://github.com/your-repository-url/hacc-website.git
+   cd hacc-website
+   ```
+
+3. **Installing Dependencies:**
+   - Run `bundle install` to install all necessary dependencies.
+
+4. **Running the Site:**
+   - Use the following command to serve the site locally:
+
+   ``` bash
+   bundle exec jekyll serve
+   ```
+
+   - Open `http://localhost:4000` in your web browser to view the site.
+
+5. **Making Changes:**
+   - Make your changes in the appropriate files. The site will automatically rebuild, and you can see the changes by refreshing your browser.
+
+6. **Committing and Pushing Changes:**
+   - After making changes, commit them using Git:
+
+   ``` bash
+   git add .
+   git commit -m "Describe your changes here"
+   git push origin main
+   ```
+
+**Resources:**
+
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [Git Documentation](https://git-scm.com/doc)
+
