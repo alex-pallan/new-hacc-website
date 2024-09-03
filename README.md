@@ -17,6 +17,9 @@ Welcome to the official website repository for the Hacking and Cyber Security Cl
   - [Adding New Equipment](#adding-new-equipment)
   - [Removing Equipment](#removing-equipment)
 - [**Only Fans Creator & YouTube Manager**](#only-fans-creator--youtube-manager)
+  - [Adding New Meetings](#adding-new-meetings)
+  - [Removing Meetings](#removing-meetings)
+  - [Editing Existing Meetings](#editing-existing-meetings)
 - [**Web Chair**](#web-chair)
 
 ---
@@ -106,6 +109,50 @@ To remove equipment from the site, simply delete its corresponding `.md` file fr
 ### Only Fans Creator & YouTube Manager
 
 **Website responsibility:** Managing and maintaining the `/meetings` page and subpages.
+
+Each meeting is represented by a `.md` file located in the `_meetings/` directory. The properties of each meeting are defined in the [front matter](https://jekyllrb.com/docs/front-matter/).
+
+#### Adding New Meetings
+
+To add a new meeting:
+
+1. **Create a New File:**
+   - Copy `_meetingtemplate.md` and rename it appropriately. The file name will be visible in the URL but not displayed on the website.
+
+2. **Edit the Front Matter:**
+   - **layout:** Keep as `meeting`.
+   - **title:** Enter the meeting title for display.
+   - **date:** Set the date in the format `YYYY-MM-DD`.
+   - **ytvidid:** Add the YouTube video ID if available. Leave blank (`ytvidid: `) if not applicable.
+   - **tags:** Provide relevant tags separated by spaces. For tags containing spaces, use `&nbsp;` instead.
+   - **description:** Add the meeting description after the second `---`. It supports markdown and HTML.
+
+3. **Save and Add to Directory:**
+   - Place the file in the `_meetings/` directory.
+   - Wait for the site to recompile (within 2 minutes).
+
+4. **Verify the Addition:**
+   - Ensure the meeting appears correctly on the site.
+
+#### Removing Meetings
+
+To remove a meeting from the site, simply delete its corresponding `.md` file from the `_meetings/` directory.
+
+#### Editing Existing Meetings
+
+To edit an existing meeting:
+
+1. **Locate the File:**
+   - Find the relevant `.md` file in the `_meetings/` directory.
+
+2. **Edit the Front Matter or Description:**
+   - Update the front matter or description as needed.
+
+3. **Save the Changes:**
+   - Save the file and wait for the site to recompile.
+
+4. **Verify the Changes:**
+   - Ensure the updated information is displayed correctly on the site.
 
 #### Adding Meetings to the Site
 
