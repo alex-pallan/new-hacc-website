@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Equipment Policy
-permalink: /equipment-policy/
+permalink: /equipment/policy/
 ---
 ## Purpose
 
