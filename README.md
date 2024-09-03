@@ -22,12 +22,6 @@ Welcome to the official website repository for the Hacking and Cyber Security Cl
   - [Editing Existing Meetings](#editing-existing-meetings)
 - [**Web Chair**](#web-chair)
   - [Running the Site Locally](#running-the-site-locally)
-  - [Prerequisites](#prerequisites)
-  - [Cloning the Repository](#cloning-the-repository)
-  - [Installing Dependencies](#installing-dependencies)
-  - [Running the Site](#running-the-site)
-  - [Making Changes](#making-changes)
-  - [Committing and Pushing Changes](#committing-and-pushing-changes)
   - [Resources](#resources)
 
 ---
@@ -170,7 +164,7 @@ Details on how to add meetings to the site.
 
 **Website responsibility:** Maintaining the structure and functionality of the website, including adding new features, fixing bugs, and updating content as needed.
 
-**Running the Site Locally:**
+#### Running the Site Locally:
 
 To work on the website locally, follow these steps:
 
@@ -209,7 +203,7 @@ To work on the website locally, follow these steps:
    git push origin main
    ```
 
-**Resources:**
+#### Resources:
 
 - [Jekyll Documentation](https://jekyllrb.com/docs/)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
