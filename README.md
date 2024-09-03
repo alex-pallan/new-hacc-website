@@ -2,10 +2,8 @@
 
 Welcome to the official website repository for the Hacking and Cyber Security Club at Iowa State University.
 
-## Instructions for Officers
-
 ---
-
+## Instructions for Officers
 ### Contents
 
 - [**President**](#president)
