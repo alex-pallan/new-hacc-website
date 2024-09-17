@@ -6,5 +6,4 @@ layout: skeleton
 title: Home
 ---
 
-{% include announcement.html %}
 {% include hero.html %}

@@ -20,23 +20,76 @@
 </div>
 <div class="container px-0">
   <div class="alert alert-primary w-100" style="border-bottom-width: 5px">
-    <h1 class="text-white"><i class="bi bi-info-circle"></i> About Us</h1>
+    <h1 class="text-white">
+      <i class="bi bi-info-circle"></i> Upcoming meeting
+    </h1>
     <hr />
-    <p>
-      The Hacking and Cyber Security Club (HACC), formerly the Information
-      Assurance Student Group, is a part of the Center for Cybersecurity
-      Innovation & Outreach at Iowa State University, holds weekly meetings on
-      cyber security topics. These meetings consist of conference-style
-      presentations about various InfoSec-related topics including hacking,
-      exploits, recent vulnerabilities in the news, webapp vulnerabilities, and
-      general hacker subjects such as radio, operating systems, and networking.
-    </p>
-    <p>
-      We often feature guest speakers from the security field, as well as offer
-      introductory-level presentations for those interested in security, but
-      without an extensive background in designing and building information
-      systems.
-    </p>
+    <div class="d-flex flex-column flex-md-row">
+      <div class="flex-shrink-0 text-center mb-2">
+        <div
+          class="position-relative"
+          style="
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid #576b66;
+            border-bottom-width: 5px;
+            overflow: hidden;
+          "
+        >
+          <img
+            src="{{ site.data.thisweeksmeeting.speakerimage }}"
+            class="position-absolute top-50 start-50 translate-middle"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+      <div class="flex-grow-1 ms-3">
+        <h1>
+          {{ site.data.thisweeksmeeting.speakername }} {% if
+          site.data.thisweeksmeeting.speakerwebsite %}<a
+            href="{{ site.data.thisweeksmeeting.speakerwebsite }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-secondary"
+            ><i class="bi bi-globe2"></i></a
+          >{% endif %} {% if site.data.thisweeksmeeting.speakeremail %}<a
+            href="mailto: {{ site.data.thisweeksmeeting.speakeremail }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-secondary"
+            ><i class="bi bi-envelope"></i></a
+          >{% endif %} {% if site.data.thisweeksmeeting.speakerlinkedin %}<a
+            href="{{ site.data.thisweeksmeeting.speakerlinkedin }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-secondary"
+            ><i class="bi bi-linkedin"></i></a
+          >{% endif %}{% if site.data.thisweeksmeeting.speakergithub %}
+          <a
+            href="{{ site.data.thisweeksmeeting.speakergithub }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-secondary"
+            ><i class="bi bi-github"></i></a
+          >{% endif %}
+        </h1>
+        <h5 class="text-secondary">
+          <i class="bi bi-person-badge"></i> {{
+          site.data.thisweeksmeeting.speakertitle }}
+        </h5>
+        <hr />
+        <p>{{ site.data.thisweeksmeeting.meetingdescription }}</p>
+      </div>
+    </div>
+    <hr />
+    <div class="w-100 text-center">
+      <h4>
+        {{ site.data.current.meetingday }} the {{
+        site.data.thisweeksmeeting.meetingdate }} at {{
+        site.data.current.meetingtime }} in {{ site.data.current.meetinglocation
+        }}
+      </h4>
+    </div>
   </div>
 </div>
 <div class="container px-0">

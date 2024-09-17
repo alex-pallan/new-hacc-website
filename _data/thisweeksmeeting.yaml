@@ -1,0 +1,15 @@
+# Speaker info
+speakerimage: https://media.licdn.com/dms/image/v2/C5603AQEzn4lf2M8alQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1658266895304?e=1732147200&v=beta&t=-axaJrB5XzjOoLLH5zLplRY4LhI-WH7qzxbXRZ3MvBI
+speakername: James Joseph
+speakertitle: President of Hacking and Cyber Security Club
+
+# Speaker social links. Leave blank and the element will not be rendered
+speakeremail:
+speakerwebsite:
+speakerlinkedin: https://www.linkedin.com/in/james-j-410b14196
+speakergithub: https://github.com/JamesOttoJ
+
+# Meeting info
+meetingdescription: James will be talking about an introduction to Virtual Machines, and an Introduction to CTFs.
+# Just provide the number (in ordinal format (ex. 1st, 23rd, 12th))
+meetingdate: 16th
