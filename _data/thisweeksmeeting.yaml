@@ -1,15 +1,15 @@
 # Speaker info
 speakerimage: 
-speakername: 
-speakertitle: 
+speakername: John Beuter
+speakertitle: HACC CTF Captian
 
 # Speaker social links. Leave blank and the element will not be rendered
 speakeremail:
 speakerwebsite:
-speakerlinkedin: 
+speakerlinkedin: https://www.linkedin.com/in/johnathon-beuter-169b9b232/
 speakergithub: 
 
 # Meeting info
-meetingdescription: 
+meetingdescription: John will be giving an overview of cyber operations and cyber physical systems.
 # Just provide the number (in ordinal format (ex. 1st, 23rd, 12th))
-meetingdate: 
+meetingdate: 23rd
